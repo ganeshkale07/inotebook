@@ -8,8 +8,7 @@ const UserSchema = new Schema({
     },
     email:{
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     password:{
         type: String,
@@ -27,5 +26,4 @@ const UserSchema = new Schema({
 
 // "createIndexes" email id unique asla pahije mag user create
 const User = mongoose.model('user', UserSchema);
-User.createIndexes();
 module.exports = User; 
