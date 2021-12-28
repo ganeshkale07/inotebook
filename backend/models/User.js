@@ -22,4 +22,10 @@ const UserSchema = new Schema({
     },
   });
 
-  module.exports = mongoose.model('user', UserSchema); 
+  //same email id use kela tari new user crated 
+//   module.exports = mongoose.model('user', UserSchema);
+
+// "createIndexes" email id unique asla pahije mag user create
+const User = mongoose.model('user', UserSchema);
+User.createIndexes();
+module.exports = User; 
