@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const NotesSchema = new Schema({
+    //these is for distinguish between a users with below user id
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'user'
+    },
     title:{
         type: String,
         required: true
