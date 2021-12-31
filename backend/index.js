@@ -15,5 +15,5 @@ app.use('/api/auth', require('./routes/auth'))
 app.use('/api/note', require('./routes/notes'))
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`inotebook app listening at http://localhost:${port}`)
 })
